@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Test Page for Web Server</title>
+  <style media="screen" type="text/css">
+  h1 {
+    color:blue;
+    text-align:center;
+  }
+  body {
+    background-color:orange;
+  }
+  </style>
+</head>
+<body>
+  <h1>Test Page Two</h1>
+  <hr>
+  <p>
+    A slightly more complicated web page for testing the CS484
+    Web Server Programming Project.  This page requires two
+    requests from the server.  The page includes such interesting HTML
+    elements as:
+    <ul>
+      <li> Embedded and inline styles </li>
+      <li> <b>Bold</b> and <em>italic</em> text</li>
+      <li> Unordered list </li>
+      <li> Colored text </li>
+      <li> Colored background </li>
+      <li> A HMMWV ready to drop! (note: HMMWV image is in a subdirectory!)</li>
+    </ul>
+    Even with a single thread and unqueued
+    socket connection requests, this page should serve up fine.  It
+    wouldn't hurt to either thread the server or, at at the very least, allow a
+    few queued connections on your server to be sure this page comes
+    up properly.
+  </p>
+  <hr>
+  Your server should also serve up a video just fine, like this demonstration of sling load operations.
+  <p>
+    <video controls>
+      <source src="/images/test.mp4" type="video/mp4">
+    </video>
+  </p>
+  <hr>
+  Even JavaScript should work.
+  <button type="button"
+    onclick="document.getElementById('date_time').innerHTML = Date()">
+    Click to get your computer's time.
+  </button>
+  <p id="date_time"></p>
+  <hr>
+  Finally, to test your redirect, click for some <a href="hmmwv.html">tactical networking</a>.
+</body>
+</html>
